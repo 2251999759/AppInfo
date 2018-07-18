@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+  <settings>
+  <!--设置懒加载  好处：1、只有当真正需要资源的时候，在去加载，节省了内存资源
+    2、不必将创建对象的代码全部写在viewDidLoad方法中，代码的可读性更强
+  -->
+    <setting name="lazyLoadingEnabled" value="false"/>
+  </settings>
+  <typeAliases>
+      <!-- 给实体类取别名 -->
+    <package name="cn.appsys.pojo"/>
+  </typeAliases>
+</configuration>
